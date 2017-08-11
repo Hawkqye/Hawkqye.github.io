@@ -1,0 +1,63 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Sedgwick+Ave+Display" rel="stylesheet">
+
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+ 
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>OscarEdman</title>
+</head>
+<link rel="icon" type="image/png" href="bilder/hoddie.jpg">
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body id="bakgrund1 " ng-app="app">
+
+<h3 id="brand" class="stay">OscarEdman</h3>
+
+        <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+        <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="menyval1.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+                    <li><a href="menyval2.html"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a></li>
+                    <li><a href="menyval4.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="center">       
+            <div class="col-sm-3">
+                <a href="https://twitter.com/OscarEdman"><img id="bild" src="https://www.seeklogo.net/wp-content/uploads/2015/09/twitter-square-logo.png" width="100"><br><b id="text">@OscarEdman</b></a>
+            </div>
+            <div class="col-sm-3">
+                <img id="bild2" src="bilder/snapchat.png" width="100"><br><b id="snap">OscarEdman</b>
+            </div>
+            <div class="col-sm-3">
+            <br>
+                <a href="https://www.instagram.com/oscar_edman/"><img id="bild3" src="bilder/instagram.png" width="80px"><br></br><b id="text">Oscar_Edman</a><br></b>
+            </div>
+        </div>
+
+            </div>
+        </div>
+</body>
+</html>
