@@ -1,4 +1,7 @@
-
+body, html {
+	height: 100%;
+	width: 100%;
+}
 
 .navbar-inverse {
     background-color: transparent;
@@ -143,4 +146,80 @@ html > body#bakgrund2 > div > center > a#v1 > h1 {
 .admin{
 	color: red;
 
+}
+
+.search-box-wrapper {
+    display: inline-flex;
+    font-size: 20px;
+}
+
+.search-box-input {
+    font-size: inherit;
+    border: 0.2em solid #000000;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 0.2em 0.5em;
+    outline: 0;
+     
+}
+
+.search-box-input:hover,
+.search-box-input:focus {
+    border-color: #000000;
+    background-color: #f2f2f2; 
+
+}
+
+.search-box-button {
+    font-size: 100px;
+    background-color: #ffffff;
+    padding: 0 0.75em;
+    color: black;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer;
+    height: 50%;
+    width: 90%;
+    border: none;
+}
+
+.search-box-button:hover,
+.search-box-button:focus {
+    border-color: #000000;
+    background-color: #f2f2f2;
+}
+.parallax {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bild1{
+    background-image: url("../bilder/sjö.jpg");
+}
+
+#bild2{
+    background-image: url("../bilder/unnamed.jpg");
+}
+
+.kommenteraknapp{
+	background-color: #eeeeee;
+	border-color:#000000;
+	border-radius: 10px;
+	border-width: 2px
+}
+
+.black {
+	color: black;
+}
+
+.purpleb{
+	background-color: purple;
+	height: 25%;
+
+}
+
+.big {
+	font-size: 100px;
 }

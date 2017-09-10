@@ -1,0 +1,16 @@
+
+@keyframes anim {
+ 0%		 { width: 100px; height: 100px}
+ 50%	 {width: 500px; height: 500px}
+ 75%    { height: 500px }
+ 100%	 { width: 100px; height: 100px}
+
+}
+.square {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	animation-name: anim;
+	animation-duration: 2s;
+    animation-iteration-count:infinite;
+}

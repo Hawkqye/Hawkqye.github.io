@@ -5,7 +5,8 @@
 <html>
 <!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
 <head>
-<link rel="icon" type="image/png" href="bilder/hoddie.jpg">
+
+<link rel="icon" type="image/png" href="bilder/oe.png">
     <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,10 +46,10 @@
         <nav class="nav navbar-inverse navbar-static-top">
             <div class="container">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="menyval1.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-                    <li><a href="menyval2.html"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a></li>
-                    <li><a href="menyval4.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
-                    <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                    <li><a href="menyval1.html"><span class="glyphicon glyphicon-search black" aria-hidden="true"></span></a></li>
+                    <li><a href="menyval2.html"><span class="glyphicon glyphicon-option-horizontal black" aria-hidden="true"></span></a></li>
+                    <li><a href="menyval4.html"><span class="glyphicon glyphicon-comment black" aria-hidden="true"></span></a></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home black" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
         </nav>
@@ -59,7 +60,7 @@
         </div>
         <div class="main-content container commentfield" ng-controller="KommentarCtrl">
             <div class="content-container">
-                <h2>Kommentarer</h2>
+                <h2>Kommentarer</h2> <br><br><br>
                 <div ng-repeat="kommentar in kommentarer">
                     <p><b>{{ kommentar.skribent }}</b> {{ kommentar.text }}</p>
                 </div>
@@ -73,9 +74,9 @@
                     <div class="form-group">
                         <input placeholder="Din kommentar" type="text" class="form-control" ng-model="kommentar.text">
                     </div>
-                    <button type="submit" class="btn btn-success">Kommentera</button>
+                    <button type="submit" class="btn kommenteraknapp">Kommentera</button>
                 </form>
             </div>
         </div>
-</body>
+       <br><br><br><br><br>
 </html>

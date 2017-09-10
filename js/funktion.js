@@ -37,15 +37,17 @@ app.controller("KommentarCtrl", function($scope, kommentarer) {
 	}
 
 	$scope.addComment = function() {
-
+		if ($scope.kommentar.skribent != "" && $scope.kommentar.text != "") {
 		if ($scope.kommentar.skribent === "abc123def") {
 			$scope.kommentar.skribent = "<Admin> Oscar";
 		}
-		else if ($scope.kommentar.skribent.toLowerCase().indexOf("<admin>") !== -1)
+		else if ($scope.kommentar.skribent.toLowerCase().indexOf("admin") !== -1)
 		{
 			$scope.kommentar.skribent = "AdminWannaBe";
 		}
 
+		var date = new Date();
+		$scope.kommentar.skribent = "[" + date.toLocaleDateString() + " " + date.toLocaleTimeString() + "] " + $scope.kommentar.skribent;
 	    // Här lägger vi till vår kommentar ($scope.kommentar) till listan med kommentarer.
 	    // Det sparas automatiskt i Firebase-databasen.
 	    $scope.kommentarer.$add($scope.kommentar);
@@ -55,6 +57,11 @@ app.controller("KommentarCtrl", function($scope, kommentarer) {
 	        text: "",
 	        skribent: ""
 	    };
+
+		}
 	};
 
 });
+
+
+
